@@ -1,0 +1,22 @@
+.footer {
+    padding: 1.5rem 0;
+    background-color: #003F52;
+}
+.footer__box {
+    position: relative;
+}
+.footer__img {
+    margin: 0;
+    position: absolute;
+    z-index: 0;
+    left: -4.4%;
+    bottom: 0;
+    transform: translateX(-50%);
+    // width: 8.8%;
+    img {
+        display: block;
+        max-width: 100%;
+        width: auto;
+        height: auto;
+    }
+}

@@ -1,0 +1,234 @@
+$color-main: #F55B00;
+
+@mixin btn {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    background-color: transparent;
+    cursor: default;
+}
+
+@mixin input {
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    background: none;
+    border-radius: 0;
+}
+
+// @mixin pseudo($display: block, $pos: absolute, $content: ''){
+//   content: $content;
+//   display: $display;
+//   position: $pos;
+// }
+
+// -webkit-appearance: none;
+// -moz-appearance: none;
+// -ms-appearance: none;
+// -o-appearance: none;
+// appearance: none!important;
+
+// &::-ms-expand {
+//     display: none;
+// }
+
+// &.owl-carousel {
+//     width: 100%;
+//     display: flex !important;
+//     .owl-stage-outer {
+//         flex: 0 0 auto;
+//         width: 100%;
+//         display: flex;
+//         .owl-stage {
+//             flex: 0 0 auto;
+//             display: flex;
+//             .owl-item {
+//                 flex: 0 0 auto;
+//                 display: flex;
+//             }
+//         }
+//     }
+// }
+
+// __menu {
+//     flex: 0 0 auto;
+//     >ul {
+//         margin: 0;
+//         padding: 0;
+//         list-style: none;
+
+//         // font-size: 1.2rem;
+//         // line-height: 1;
+//         // font-weight: 700;
+//         // text-transform: uppercase;
+
+//         display: flex;
+//         a {
+//             display: block;
+//             text-decoration: none;
+//             transition: all .5s ease;
+//         }
+//         > li {
+//             position: relative;
+//             &:hover, &:active, &.active {
+//                 > a {
+//                     color: $light;
+//                 }
+//                 >ul {
+//                     visibility: visible;
+//                     transform: translateY(0);
+//                     opacity: 1;
+//                     z-index: 1;
+//                 }
+//             }
+//             > a {
+//                 // padding: 3rem 1.5rem;
+//                 // color: $medium;
+//                 white-space: nowrap;
+//                 &:hover, &:active {
+//                     color: $light;
+//                 }
+//             }
+//             > ul {
+//                 margin: 0;
+//                 padding: 0;
+//                 list-style: none;
+//                 visibility: hidden;
+//                 transform: translateY(3rem);
+//                 opacity: 0;
+//                 position: absolute;
+//                 left: 0;
+//                 min-width: 100%;
+//                 transition: all .3s ease;
+//                 // background-color: $light;
+//                 li {
+//                     position: relative;
+//                     ul {
+//                         position: absolute;
+//                         top: 0;
+//                         right: 0;
+//                         transform: translateY(3rem) translateX(100%);
+//                         margin: 0;
+//                         padding: 0;
+//                         list-style: none;
+//                         // background-color: $medium;
+//                         visibility: hidden;
+//                         opacity: 0;
+//                         transition: all .3s ease;
+//                     }
+//                     &:hover, &:active, &.active {
+//                         >ul {
+//                             transform: translateY(0) translateX(100%);
+//                             visibility: visible;
+//                             opacity: 1;
+//                             z-index: 1;
+//                         }
+//                     }
+//                 }
+//                 a {
+//                     // padding: 1rem 1.5rem;
+//                     // color: #fff;
+//                     &:hover, &:active {
+//                         background-color: transparentize(#000, .9);
+//                     }
+//                 }
+
+//             }
+//         }
+//     }
+// }
+
+
+// .header__nav-button {
+//     @include btn;
+//     flex: 0 0 auto;
+//     position: relative;
+//     z-index: 1;
+//     // left: 0;
+//     // top: 50%;
+//     // transform: translateY(-50%);
+//     // width: 5rem;
+//     // width: 2.5rem;
+//     height: 1.75rem;
+//     margin: 0 2rem 0 0;
+//     padding: 0 0 0 4rem;
+//     font-size: 1.2rem;
+//     // line-height: 1;
+//     font-weight: 500;
+//     // letter-spacing: .05em;
+//     color: inherit;
+//     transition: 0.3s;
+//     &:before,
+//     &:after {
+//         content: '';
+//         position: absolute;
+//         left: 0;
+//         width: 2.3rem;
+//         height: 2px;
+//         border-radius: .4rem;
+//         background-color: #fff;
+//         transition: all 0.5s ease;
+//     }
+//     background-image: linear-gradient(#fff,#fff);
+//     background-size: 1.4rem 2px;
+//     background-position: 0 50%;
+//     background-repeat: no-repeat;
+//
+//     // span {
+//     //     top: 1.7rem;
+//     //     width: 4rem;
+//     // }
+//
+//     &:before {
+//         top: 0;
+//     }
+//
+//     &:after {
+//         bottom: 0;
+//     }
+//
+//     &:active,
+//     &:hover {
+//         color: $color-blue;
+//         background-image: linear-gradient($color-blue,$color-blue);
+//         &:before, &:after {
+//             background-color: $color-blue;
+//         }
+//     }
+//
+//     &.active {
+//         position: fixed;
+//         z-index: 1000;
+//
+//         font-size: 0;
+//         &:after,
+//         &:before {
+//             background-color: #fff;
+//         }
+//         &:active,
+//         &:hover {
+//             &:after,
+//             &:before {
+//                 background-color: $color-blue;
+//             }
+//         }
+//
+//         background-image: none;
+//
+//         &:before {
+//             top: .8rem;
+//             transform: rotate(45deg);
+//         }
+//
+//         &:after {
+//             bottom: .8rem;
+//             transform: rotate(-45deg);
+//         }
+//     }
+// }
